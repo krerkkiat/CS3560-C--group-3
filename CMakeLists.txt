@@ -289,7 +289,10 @@ endif ()
 
 if (BUILD_TESTS)
   set(APP_TEST_SRCS
-    src/test_message_handler.cpp)
+    src/test_main.cpp
+    src/test_util_functions.cpp
+    src/test_message_handler.cpp
+    src/utils.cpp)
 
   add_executable(test_app)
   target_sources(test_app PRIVATE ${APP_TEST_SRCS})
